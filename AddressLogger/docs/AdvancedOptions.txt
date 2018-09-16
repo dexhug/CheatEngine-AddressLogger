@@ -1,0 +1,24 @@
+This file explains the Advanced Options available to the AddressLogger.
+Your selections will persist across restarts.
+
+1. "Only log changes when process is focused": Many games require the game
+window to be in focus in order to actively run, so you can use this to avoid
+logging when the game is not in focus. If your game runs in the background, you
+want to work in Cheat Engine while the AddressLogger is running, or repeated
+values do not matter in your logs, then you probably do not need this option.
+
+2. "Do not create AddressInformation file": This is pretty self-explanatory.
+Check out the file and if you find yourself not needing it, activate this
+option.
+
+3. "Log address on breakpoint": This is a useful feature that allows you to log
+only when an address changes. When the AddressLogger detects your inputted
+address to have a different value, it will log that address and any other
+addresses in your table (even if they were unchanged). This option ignores your
+interval setting. Make sure you input the tracked address into this field, not
+the base address.
+
+4. "Automatically attach a process on startup": Cheat Engine already has this
+feature by default, but I included it here as well for accessibility. You can
+have Cheat Engine open a process by default when you launch the application.
+Note that your process must be opened or the option will fail.

@@ -1,0 +1,43 @@
+CSV File Format:
+
+
+This program generates two CSV files.
+
+
+The first file is the AddressLogs file. It stores changes to the Cheat Table
+values. This is the main one you will be using. It has the following column
+structure:
+0 = Real Time (real time) - current time of day. It is accurate but milliseconds
+    are not recorded in Lua, so values recorded within a second will show the
+    same time.
+1 = Log Time (theoretical time) - time logged since start of script, including
+    milliseconds. This is simply a calculated value so it will always DISPLAY
+    the exact time theoretically, but it will not always EQUAL the correct time
+    if the scipt is executing slower than your interval. Compare these values
+    with the real time column to see how well the script is executing for you
+    (the two times should not become misaligned unless your game pauses). It
+    is formatted as "HH:MM:SS:mmm".
+2+ = Addresses - Real addresses (pointers have been traced to the final
+    destination), with the rows under them being the value corresponding with
+    the time columns.
+
+
+The second file is the AddressInformation file. It stores the descriptive data
+that comes along with each address. You'll mostly use this to get the address
+descriptions, since that will be important to any data visualization. It has the
+following column structure:
+0 = Address IDs
+1 = Address Descriptions
+2 = Address Types
+3 = Addresses (same order as addresses in AddressLogs file)
+4+ = Offset values, one offset per column
+
+
+Each file has a numeric string generated after the name. For example:
+AddressLogs-07202018-230910.CSV
+The numbers are a date-time string, in the format of:
+AddressLogs-MMDDYYYY-HHMMSS (HH is in 24 hour time)
+This ensures that every saved file is unique.
+
+
+All files are stored in the AddressLogger\logs directory.
