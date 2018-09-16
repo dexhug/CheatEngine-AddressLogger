@@ -73,5 +73,7 @@ READ the Docs directory for additional information.
 
 
 Author: dexter3
+
 Contact: CE Forum
+
 Slimer GitHub: https://github.com/d-e-x-t-e-r/slimer
