@@ -1,4 +1,4 @@
-Thank you for using the AddressLogger!
+# Thank you for using the AddressLogger!
 
 The AddressLogger records changes to all the Addresses in a Cheat Engine Cheat
 Table and saves them to a CSV file. This extension is particularly useful for
@@ -8,7 +8,7 @@ information, whether it is every 100 milliseconds or 10 minutes. Another option
 allows you to observe the addresses as they change.
 
 
---- INSTRUCTIONS FOR USE ---
+## INSTRUCTIONS FOR USE
 
 1. Download AddressLogger and extract the contents into the Cheat Engine
 autorun directory. You can probably find this at:
@@ -66,7 +66,7 @@ Note: If you are writing to a very large log file, be sure to let the program
 finish writing to the file before starting the AddressLogger again, or you will
 lose any data that was not yet written.
 
---- END INSTRUCTIONS ---
+-------------
 
 
 READ the Docs directory for additional information. 
@@ -74,5 +74,4 @@ READ the Docs directory for additional information.
 
 Author: dexter3
 Contact: CE Forum
-GitHub: 
 Slimer GitHub: https://github.com/d-e-x-t-e-r/slimer
